@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package buying;
+
+option go_package = "github.com/epic55/BankApp/buyingGRPC";
+
+service Buying {
+  rpc Buying (BuyingRequest) returns (BuyingReply);
+}
+
+message BuyingRequest {
+  int32 userId = 1;
+  int32 pin = 2;
+  int64 price = 3; 
+}
+
+message BuyingReply {
+  string message = 1;
+}

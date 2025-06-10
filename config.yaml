@@ -1,0 +1,5 @@
+server:
+  port: "8080"
+
+db:
+  dsn: "postgres://postgres:1@localhost:5432/postgres?sslmode=disable"
